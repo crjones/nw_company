@@ -63,6 +63,8 @@ body, html {
 
 body {
     background: url(../images/background-placeholder.jpg);
+    background-color: rgba(0, 0, 0, 0.45);
+    background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
