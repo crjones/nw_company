@@ -25,7 +25,8 @@
     width:fit-content;
     font-size: calc(40px + 2vw);
     top: -400px;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    letter-spacing: .050em;
     color: white;
     text-shadow: 0 0 .25rem black;
     /* border: 1px solid magenta; */
@@ -91,13 +92,20 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom; */
-    border: 10px solid magenta; 
+    /* border: 10px solid magenta;  */
     /* clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%); */
     z-index: -1;
     width: 100vw;
-    height: 6000px;
-    transform: scale(2,1) rotateX(70deg) translateY(100em);
-    filter: invert() opacity(.2);
+    height: 3000px;
+    bottom: -1000px;
+    transform: scale(2,1) rotateX(70deg) translateY(40em);
+    /* filter: drop-shadow(2px 2px 2px rgb(110,40,173)); */
+}
+
+.floor img {
+    height: 100%;
+    width: 100%;
+    filter: invert() opacity(.1);
 }
 
 @media screen and (max-width: 2389px) {
@@ -211,8 +219,8 @@ body {
     background: black;
     bottom: -100px;
     left: 10;
-    filter: blur(4em);
-    opacity: .6;
+    filter: blur(3em);
+    opacity: .8;
     transform: rotateY(-50deg) translateX(-22em) rotateX(65deg) translateY(-8em);
 }
 
