@@ -81,6 +81,7 @@
 body, html {
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -183,6 +184,11 @@ body {
     .panel {
         display: none;
     }
+    .nwlogo {
+        right: calc(50vw - 192px / 2 + -2em) !important;
+        /* border: 1px solid magenta; */
+        
+    }
 }
 
 @keyframes leadersFade {
@@ -236,15 +242,15 @@ body {
     height: 10em;
     width: 14em;
     background: black;
-    bottom: -90px;
+    bottom: -80px;
     left: 10;
     filter: blur(3em);
     opacity: .6;
-    transform: rotateY(-50deg) translateX(-22em) rotateX(65deg) translateY(-8em);
+    transform: rotateY(-50deg) translateX(-26em) rotateX(65deg) translateY(-8em);
 }
 
 .leaders-left .leader::after {
-    transform: rotateY(-50deg) translateX(-15em) rotateX(-65deg) translateY(-8em);
+    transform: rotateY(-50deg) translateX(-14em) rotateX(-65deg) translateY(-8em);
 
 }
 .coat::after {
@@ -355,6 +361,16 @@ body {
     filter: blur(2em);
     animation: pulse 3550ms infinite;
   }
+
+.nwlogo {
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    margin: 3em;
+    width: 12em;
+    opacity: .3;
+    transition: right 100ms linear;
+}
 
 @keyframes pulse {
     0% {
