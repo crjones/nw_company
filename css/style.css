@@ -17,7 +17,7 @@
     background: rgba(31, 31, 31,.85);
     border-radius: .25em;
     height: 10em;
-    top: 24em;
+    top: 26em;
     width: 95%;
     box-shadow: 0 0 2em rgb(54, 54, 54);
     min-width: 520px;
@@ -131,7 +131,7 @@ body {
         background-position-x: var(--percent-visible);
     }
 }
-@media screen and (max-width: 1490px) {
+@media screen and (max-width: 1730px) {
     .leaders-left .leader:first-child {
         display: none;
         /* animation: leadersFade 400ms forwards; */
@@ -141,7 +141,7 @@ body {
         /* animation: leadersFade 400ms forwards; */
     }
 }
-@media screen and (max-width: 1245px) {
+@media screen and (max-width: 1420px) {
     .leaders-left .leader:first-child,
     .leaders-left .leader:nth-child(2) {
         display: none;
@@ -153,7 +153,7 @@ body {
         /* animation: leadersFade 400ms forwards; */
     }
 }
-@media screen and (max-width: 977px) {
+@media screen and (max-width: 1120px) {
     .leaders-left .leader:first-child,
     .leaders-left .leader:nth-child(2),
     .leaders-left .leader:nth-child(3) {
@@ -168,7 +168,7 @@ body {
     }
 }
 
-@media screen and (max-width: 737px) {
+@media screen and (max-width: 805px) {
     .leaders-left .leader {
         display: none;
         /* animation: leadersFade 400ms forwards; */
@@ -176,6 +176,12 @@ body {
     .leaders-right .leader {
         display: none;
         /* animation: leadersFade 400ms forwards; */
+    }
+}
+
+@media screen and (max-width: 805px) {
+    .panel {
+        display: none;
     }
 }
 
@@ -199,16 +205,16 @@ body {
 .leader {
     /* border: 1px solid cyan; */
     display: block;
-    width: 150px;
+    width: 200px;
     height: fit-content;
-    margin-left: -.8rem;
+    margin-left: -1.8rem;
     /* background: rgba(0, 255, 255, 0.1); */
     align-items: center;
     text-align: center;
 }
 
 .leader img {
-    height: 400px;
+    height: 425px;
     max-width: 100%;
 }
 
@@ -255,10 +261,10 @@ body {
 
 .leaders-center {
     position: relative;
-    width: 325px;
+    width: 350px;
     align-items: center;
     justify-content: center;
-    min-width: 325px;
+    min-width: 350px;
     top: -2rem;
     margin: auto .5rem;
     /* border: 1px solid magenta; */
