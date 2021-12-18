@@ -142,6 +142,9 @@ body {
         display: none;
         /* animation: leadersFade 400ms forwards; */
     }
+    .expand-cta {
+        opacity: .9 !important;
+    }
 }
 @media screen and (max-width: 1420px) {
     .leaders-left .leader:first-child,
@@ -153,6 +156,9 @@ body {
     .leaders-right .leader:nth-child(3) {
         display: none;
         /* animation: leadersFade 400ms forwards; */
+    }
+    .expand-cta {
+        opacity: .9 !important;
     }
 }
 @media screen and (max-width: 1120px) {
@@ -168,6 +174,9 @@ body {
         display: none;
         /* animation: leadersFade 400ms forwards; */
     }
+    .expand-cta {
+        opacity: .9 !important;
+    }
 }
 
 @media screen and (max-width: 805px) {
@@ -178,6 +187,9 @@ body {
     .leaders-right .leader {
         display: none;
         /* animation: leadersFade 400ms forwards; */
+    }
+    .expand-cta {
+        opacity: .9 !important;
     }
 }
 
@@ -193,6 +205,10 @@ body {
         /* border: 1px solid magenta; */
         
     }
+    .expand-cta {
+        opacity: .0 !important;
+        display: none;
+    }
 }
 
 @media screen and (max-width: 605px) and (max-height: 1075px) {
@@ -202,6 +218,10 @@ body {
 
     .discord {
         transform: translateY(2em);
+    }
+    .expand-cta {
+        opacity: .0 !important;
+        display: none;
     }
 }
 @keyframes leadersFade {
@@ -372,7 +392,7 @@ body {
     border-radius: 50%;
     background: rgba(110, 40, 173, 1);
     z-index: -1;
-    filter: blur(2em);
+    filter: blur(1.5em);
     animation: pulse 3550ms infinite;
   }
 
@@ -392,7 +412,62 @@ body {
       opacity: 0.95;
     }
     100% {
-      transform: scale(1.8);
+      transform: scale(1.4);
       opacity: 0;
     }
   }
+
+
+/* Aura Text */
+p.main-text {
+    display: block;
+    position: absolute;
+    color: cyan;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    opacity: .95;
+    text-shadow: 0 0 .125em white;
+  }
+  
+  div.aura-effect {
+    position: absolute;
+    font-size: 3em;
+    text-transform: lowercase;
+    z-index: 1;
+    opacity: 0;
+    bottom: .125em;
+    transition: opacity 200ms linear;
+    /* border: 1px solid magenta; */
+  }
+  
+  p.aura {
+    display: block;
+    position: relative;
+    color: black;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+    opacity: 1;
+    filter: drop-shadow(0 0 .5em cyan);
+    animation: 2000ms aura infinite;
+  }
+  
+  
+  @keyframes aura {
+      0% {
+  /*       transform: scale(0.98); */
+        opacity: .8;
+        filter: drop-shadow(0 0 .15em cyan);
+      }
+    50% {
+  /*       transform: scale(0.98); */
+        opacity: 1;
+        filter: drop-shadow(0 0 .6em cyan);
+      }
+      100% {
+  /*       transform: scale(1.1); */
+        opacity: .8;
+        filter: drop-shadow(0 0 .25em cyan);
+      }
+    }
