@@ -100,6 +100,18 @@ body {
     
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgba(39, 38, 36, 0.877);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: rgba(0, 0, 0, 0.45);
+    }
+}
+
 
 .floor {
     position: fixed;
