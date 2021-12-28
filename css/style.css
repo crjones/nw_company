@@ -165,7 +165,7 @@ body {
         /* animation: leadersFade 400ms forwards; */
     }
     .leaders-right .leader:last-child,
-    .leaders-right .leader:nth-child(3) {
+    .leaders-right .leader:nth-last-child(2) {
         display: none;
         /* animation: leadersFade 400ms forwards; */
     }
@@ -181,8 +181,8 @@ body {
         /* animation: leadersFade 400ms forwards; */
     }
     .leaders-right .leader:last-child,
-    .leaders-right .leader:nth-child(3),
-    .leaders-right .leader:nth-child(2) {
+    .leaders-right .leader:nth-last-child(2),
+    .leaders-right .leader:nth-last-child(3) {
         display: none;
         /* animation: leadersFade 400ms forwards; */
     }
